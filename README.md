@@ -155,8 +155,8 @@ flowchart TD
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/cold-call-assistant.git
-cd cold-call-assistant
+git clone https://github.com/AjayBadhe850/cold-call.git
+cd cold-call
 
 # 2. Install all dependencies
 npm install
@@ -392,7 +392,7 @@ Use this timestamped speaking plan for your recorded walkthrough:
 
 ## 17. Final Submission Checklist
 
-- [x] **1. Public GitHub Repository**: Clean codebase, schema, tests, and documentation.
+- [x] **1. Public GitHub Repository**: [https://github.com/AjayBadhe850/cold-call](https://github.com/AjayBadhe850/cold-call)
 - [ ] **2. Live Vercel Application URL**: Ready to deploy via Section 14B.
 - [ ] **3. Render Backend Health URL**: Ready to deploy via Section 14A.
 - [ ] **4. Six-Minute Demonstration Video URL**: Ready to record using Section 16 speaking notes.
