@@ -1,0 +1,46 @@
+{
+  "name": "cold-call-assistant",
+  "version": "1.0.0",
+  "description": "Production-ready Cold-Call Assistant web application with 8-stage methodology, Supabase persistence, and Gemini LLM guidance",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,green.bold\" \"npm run server:dev\" \"npm run client:dev\"",
+    "client:dev": "vite",
+    "client:build": "tsc -b && vite build",
+    "client:preview": "vite preview",
+    "server:dev": "tsx watch server/src/index.ts",
+    "server:build": "tsc -p server/tsconfig.json",
+    "server:start": "node server/dist/server/src/index.js",
+    "build": "npm run client:build && npm run server:build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit && tsc -p server/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/supertest": "^6.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14",
+    "vitest": "^2.1.8"
+  }
+}
